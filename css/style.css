@@ -229,6 +229,7 @@ img, .lightbox{
   margin: 0 auto;
   opacity:0;
   max-height:90vh;
+	z-index:-100;
 }
 
 .toggle #lightbox-img{
