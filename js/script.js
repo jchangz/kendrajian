@@ -1,4 +1,9 @@
-
+$(function() {
+        $('.lazy').Lazy({
+          effect: 'fadeIn',
+        effectTime: 1200,
+        threshold: 50});
+    });
 
 $('.lazy').click(function() { 
   $('html').toggleClass("toggle");
@@ -21,12 +26,7 @@ $('#button-return-top').click(function() {      // When arrow is clicked
     }, 500);
 });
 
-$(function() {
-        $('.lazy').Lazy({
-          effect: 'fadeIn',
-        effectTime: 1200,
-        threshold: 50});
-    });
+
 
 $(window).scroll(function(){
     if ($(window).scrollTop() >= 180) {
