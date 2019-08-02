@@ -12,11 +12,13 @@ $('img').click(function() {
   $('body').toggleClass("noscroll");
 })
 });
-                              
+
+$(function(){
 $('.lightbox').click(function(){
   $('html').removeClass("toggle");
   $('#lightbox-img').attr('src', 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==');
   $('body').removeClass("noscroll");
+        })
 });
 
 
