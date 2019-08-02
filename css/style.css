@@ -203,6 +203,7 @@ img, .lightbox{
   position:relative;
   display: inline-block;
   margin: 0 auto;
+  padding:1rem;
   opacity:0;
   max-height:90vh;
 }
