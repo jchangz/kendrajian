@@ -23,7 +23,7 @@ $('.lightbox').click(function(){
 
 
 $(function(){
-$('#button-return-top').on("click",function() {      // When arrow is clicked
+$('#button-return-top').click(function() {      // When arrow is clicked
     $('body,html').animate({
         scrollTop : 0                       // Scroll to top of body
     }, 500);
