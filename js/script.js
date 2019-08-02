@@ -43,11 +43,5 @@ $(window).scroll(function(){
 });
 
 
-var fixed = document.getElementById('lightbox-img');
-
-fixed.addEventListener('touchmove', function(e) {
-
-        e.preventDefault();
-
-}, false);
+$('#lightbox-img').bind('touchmove', function(e){e.preventDefault()}); 
 
