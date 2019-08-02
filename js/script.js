@@ -5,11 +5,13 @@ $(function() {
         threshold: 50});
     });
 
-$('.lazy').click(function() { 
+$(function(){
+$('img').click(function() { 
   $('html').toggleClass("toggle");
   $('#lightbox-img').attr('src',$(this).prop('currentSrc'));
   $('.lightbox-caption').text($(this).next('figcaption').text());
   $('body').toggleClass("noscroll");
+})
 });
                               
 $('.lightbox').click(function(){
