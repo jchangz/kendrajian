@@ -172,30 +172,6 @@ button {
 
 
 
-
-
-figcaption{
-display:block;}
-
-
-figcaption{
-display:none;
-  font-family:'Lato';
-  text-align:center;
-  font-size:1rem;
-}
-
-.lightbox-caption{
-opacity:0;
-  margin:0.5rem 1.3rem 0;
-}
-.toggle .lightbox-caption{
-  display:block;
-opacity:1;
-  transition:1s;
-}
-
-
 /**************************************************/
 /*                   LIGHTBOX                     */
 /**************************************************/
@@ -229,7 +205,6 @@ img, .lightbox{
   margin: 0 auto;
   opacity:0;
   max-height:90vh;
-	z-index:-100;
 }
 
 .toggle #lightbox-img{
