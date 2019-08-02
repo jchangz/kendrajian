@@ -4,7 +4,6 @@ $(function() {
         effectTime: 1200,
         threshold: 50});
     });
-
 $(function(){
 $('img').click(function() { 
   $('html').toggleClass("toggle");
@@ -13,18 +12,16 @@ $('img').click(function() {
   $('body').toggleClass("noscroll");
 })
 });
-
-$(function(){
+                              
 $('.lightbox').click(function(){
   $('html').removeClass("toggle");
   $('#lightbox-img').attr('src', 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==');
   $('body').removeClass("noscroll");
-})
 });
 
 
 
-$('#button-return-top').click(function() {      // When arrow is clicked
+$('#button-return-top').on("click",function() {      // When arrow is clicked
     $('body,html').animate({
         scrollTop : 0                       // Scroll to top of body
     }, 500);
